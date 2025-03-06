@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* Titolo della pagina */
+.titolo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logo {
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Icona login */
+.avatar {
+   
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.3);
+    color: #ffd700;
+}
+
+/* Animazione di fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Icona home */
+.home-button {
+    margin-right: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.home-button:hover{
+    transform: scale(1.3);
+    color: #ffd700;
+}
+
+.header-btn {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+  }

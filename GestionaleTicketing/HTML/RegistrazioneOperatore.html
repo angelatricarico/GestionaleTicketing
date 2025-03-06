@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.m.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/Registrazione.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <title>Registrazione Operatore</title>
+</head>
+<body>
+      <!-- Profilo e Home-->
+      <header>
+        <img src="/logo.png" class="logo">
+        <div class="header-btn" style="display: flex; align-items: center; justify-content: flex-start;">
+            <a href="../HTML/home.html"><i class="fa-solid fa-house home-button" style="margin-right: 10px;"></i></a>
+            <a href="../HTML/Profile.html"><i class="fas fa-user-circle avatar" style="margin-right: 10px;"></i></a>
+          </div>
+    </header>
+
+    <div class="Registrazione">
+        <h1>Registra un Operatore</h1>
+        <form id="Registrazione-form">
+          
+            <div class="form-group">
+                <input type="text" class="form-control item" id="nome" placeholder="Nome*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="Cognome" placeholder="Cognome*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="email" placeholder="E-mail*" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" placeholder="Password*" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="confermaPassword" placeholder="Conferma Password*" required>
+            </div>
+    
+            <!-- MENU A TENDINA PER LA CATEGORIA -->
+            <div class="form-group">
+                <label for="categoria" style = "color: black">Seleziona una categoria per l'operatore:</label>
+                <select id="categoria" class="form-control item" required>
+                    <option value="" disabled selected>Seleziona una categoria</option>
+                    <option value="1">Ordine e Spedizione</option>
+                    <option value="2">Account e Accesso</option>
+                    <option value="3">Pagamento e Fatturazione</option>
+                    <option value="4">Rimborso</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <input type="checkbox" id="privacy" required>
+                <label for="privacy">
+                    <a>Privacy Policy e</a>  
+                    <a>Termini e Condizioni</a>
+                </label>
+                <p>* Campi obbligatori</p>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">Crea Account Operatore</button>
+            </div>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="../JS/RegistrazioneOperatore.js"></script>
+
+       
+</body>
+</html>

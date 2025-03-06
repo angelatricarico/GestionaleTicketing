@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/Ticket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+     <!-- Profilo e Home-->
+     <header>
+      <img src="/logo.png" class="logo">
+      <div class="header-btn" style="display: flex; align-items: center; justify-content: flex-start;">
+          <a href="../HTML/home.html"><i class="fa-solid fa-house home-button" style="margin-right: 10px;"></i></a>
+          <a href="../HTML/Profile.html"><i class="fas fa-user-circle avatar" style="margin-right: 10px;"></i></a>
+        </div>
+  </header>
+
+  <div class="titolo">
+    <h1 class="titolo-form ">I miei ticket</h1>
+    </div>
+    <div class="blocco-body">
+
+<div class="pulsanti">
+<span class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filtri
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button" id="tutti">Tutti</button>
+    <button class="dropdown-item" type="button" id="APERTO">Aperti</button>
+    <button class="dropdown-item" type="button" id="VISUALIZZATO">Visualizzati</button>
+    <button class="dropdown-item" type="button" id="IN_LAVORAZIONE">In lavorazione</button>
+    <button class="dropdown-item" type="button" id="CHIUSO">Chiusi</button>
+  </div>
+</span>
+</form>
+</div>
+
+<div class="elenco-ticket">
+</div>
+
+<div class="tabella">
+  <table class="table table-striped">
+      <thead>
+          <tr class="riga_colonna">
+              <th scope="col">#</th>
+              <th scope="col">Email</th>
+              <th scope="col" class="data-tb">Data apertura</th>
+              <th scope="col" class="data-tb">Data chiusura</th>
+              <th scope="col">Oggetto</th>
+              <th scope="col">Stato</th>
+          </tr>
+      </thead>
+      <tbody id="tbody">
+          
+          </tbody>
+  </table>
+</div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="../JS/TicketOperatore.js"></script>
+
+</html>

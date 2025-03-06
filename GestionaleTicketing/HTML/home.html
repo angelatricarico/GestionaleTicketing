@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketEase</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+   
+</head>
+<body>
+    
+    <header>
+        <img src="/logo.png" class="logo">
+        <div class="header-btn" style="display: flex; align-items: center; justify-content: flex-start;">
+           
+            <a href="../HTML/home.html"><i class="fa-solid fa-house home-button" style="margin-right: 10px;"></i></a>
+            <a href="../HTML/Profile.html"><i class="fas fa-user-circle avatar" style="margin-right: 10px;"></i></a>
+            
+        </div>
+        <div class="header-content">
+            <h1>TicketEase</h1>
+            <p>Benvenuto nel nostro centro di supporto. Come possiamo aiutarti?</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <span>TicketEase</span> è un gestionale di ticketing progettato per semplificare la<span>gestione delle richieste di assistenza</span>, garantendo 
+            un flusso di lavoro chiaro e organizzato per utenti, operatori e amministratori. 
+        </div>
+
+                <!-- Sezione Apri Ticket -->
+                <section class="open-ticket" >
+                    <div class="ticket-container">
+                        <a href="#" class="open-ticket-btn"  id="ticket-btn">
+                            <i class="fas fa-ticket-alt"></i> Ticket
+                        </a>
+                    </div>
+                </section>
+
+        <!-- Sezione categorie -->
+            <section class="categories">
+                <h2>Categorie Ticket</h2>
+                <div class="category-grid" id="categoryContainer"></div>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-btn">Hai bisogno di ulteriore aiuto? <a href="#">Contatta il supporto</a></p>
+    </footer>
+    
+
+    <script defer src="../JS/home.js"></script>
+</body>
+</html>
